@@ -4,11 +4,11 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     height: 100vh; 
     width: 100vw;/* Full-screen height */
     background-color: #fdf6e4; /* Optional background color */
-    padding-top: env(safe-area-inset-top);   /* iPhone notch/top area */
+    padding-top: 10vh;   /* iPhone notch/top area */
     padding-bottom: env(safe-area-inset-bottom);
   }
   
@@ -189,11 +189,5 @@ body {
     .card {
       height: 70vh;
       aspect-ratio: 350 / 500;
-    }
-    .card h1 {
-      font-size: 1.5rem;
-    }
-    .card p {
-      font-size: 0.9rem;
     }
   }
