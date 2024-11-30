@@ -1,12 +1,12 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    height: 100vh; /* Full-screen height */
+    background-color: #fdf6e4; /* Optional background color */
   }
   
   /* Card Container */
@@ -176,4 +176,37 @@ body {
     left: 10px; /* Position in the top-left corner */
     font-size: 24px; /* Adjust size */
     color: #d4af37; /* Elegant green or other floral color */
+  }
+
+  /* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .card {
+      width: 280px; /* Reduce width for tablets */
+      height: 400px; /* Reduce height for tablets */
+      padding: 15px; /* Less padding on smaller screens */
+    }
+  
+    .card h1 {
+      font-size: 1.5rem; /* Smaller heading for tablets */
+    }
+  
+    .card p {
+      font-size: 0.9rem; /* Smaller body text for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 90%; /* Use a percentage width for phones */
+      height: auto; /* Let the height adjust automatically */
+      padding: 10px;
+    }
+  
+    .card h1 {
+      font-size: 1.2rem; /* Smaller heading for phones */
+    }
+  
+    .card p {
+      font-size: 0.8rem; /* Smaller body text for phones */
+    }
   }
