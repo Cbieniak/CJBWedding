@@ -18,8 +18,8 @@ body {
   /* Card Styling */
   .card {
     transform-origin: center center; /* Set transform origin to center */
-    width: 80vw;
-    height:  70vh;
+    width: 350px;
+    height:  500px;
     position: relative;
     transform-style: preserve-3d;
     transform-origin: center center;
@@ -180,4 +180,18 @@ body {
     left: 10px; /* Position in the top-left corner */
     font-size: 24px; /* Adjust size */
     color: #d4af37; /* Elegant green or other floral color */
+  }
+
+  /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .card {
+      height: 70vh;
+      aspect-ratio: 350 / 500;
+    }
+    .card h1 {
+      font-size: 1.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
   }
